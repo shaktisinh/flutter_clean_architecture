@@ -1,0 +1,374 @@
+include: package:flutter_lints/flutter.yaml
+linter:
+  metrics:
+    cyclomatic-complexity: 20
+    maximum-nesting-level: 5
+    number-of-arguments: 4
+    number-of-methods: 10
+    source-lines-of-code: 100
+    weight-of-class: 0.33
+    maximum-dead-code-blocks: 3
+    maximum-file-lines: 500
+    maximum-line-length: 120
+    maximum-public-api: 200
+    maximum-allowed-lints: 15
+    number-of-parameters-in-constructor: 7
+    lines-of-executable-code: 40
+  rules:
+    # Ensure that return types are always declared for functions and methods.
+    always_declare_return_types: true
+
+    # Ensure that required named parameters are always placed before optional named parameters.
+    always_put_required_named_parameters_first: true
+
+    # Avoid empty else blocks, as they can lead to code that is difficult to understand and maintain.
+    avoid_empty_else: true
+
+    # Avoid relative imports from the 'lib' directory, as it can cause confusion and make the code less portable.
+    avoid_relative_lib_imports: true
+
+    # Prefer using conditional expressions (ternary operator) over if-else statements for simple conditions.
+    prefer_conditional_expression_over_if_else: true
+
+    # Prefer using single quotes for string literals, as it improves code readability and avoids escaping.
+    prefer_single_quotes: true
+
+    # Prefer using 'void' instead of 'null' as the return type for functions that don't return a value.
+    prefer_void_to_null: true
+
+    # Prefer using asserts with messages to provide more context when an assertion fails.
+    prefer_asserts_with_message: true
+
+    # Ensure that widget constructors use a 'key' parameter to improve performance and enable widget reuse.
+    use_key_in_widget_constructors: true
+
+    # Avoid accessing collections (e.g., lists, maps) using constant indices, as it can lead to runtime errors.
+    avoid_accessing_collections_by_constant_index: true
+
+    # Avoid using cascades (..) after a null check (??), as it can lead to unexpected behavior.
+    avoid_cascade_after_if_null: true
+
+    # Avoid using collection methods (e.g., add, remove) with unrelated types, as it can lead to runtime errors.
+    avoid_collection_methods_with_unrelated_types: true
+
+    # Avoid using double slash (//) for imports, as it can cause issues with code analysis and tooling.
+    avoid_double_slash_imports: true
+
+    # Avoid duplicate cascades (..) in a single expression, as it can make the code harder to read and understand.
+    avoid_duplicate_cascades: true
+
+    # Avoid duplicate exports in a library, as it can cause conflicts and confusion when importing the library.
+    avoid_duplicate_exports: true
+
+    # Avoid duplicate initializers in a constructor, as it can lead to unexpected behavior and confusion.
+    avoid_duplicate_initializers: true
+
+    # Avoid duplicate keys in map literals, as it can lead to unexpected behavior and overwrite values.
+    avoid_duplicate_map_keys: true
+
+    # Avoid duplicate mixins in a class declaration, as it can lead to unexpected behavior and conflicts.
+    avoid_duplicate_mixins: true
+
+    # Avoid duplicate patterns in switch-case statements, as it can lead to unexpected behavior and confusion.
+    avoid_duplicate_patterns: true
+
+    # Avoid duplicate conditions in switch-case statements, as it can lead to unexpected behavior and confusion.
+    avoid_duplicate_switch_case_conditions: true
+
+    # Avoid duplicate assertions in test cases, as it can lead to redundant and potentially incorrect tests.
+    avoid_duplicate_test_assertions: true
+
+    # Avoid using the 'dynamic' type, as it bypasses static type checking and can lead to runtime errors.
+    avoid_dynamic: true
+
+    # Avoid using equal expressions (e.g., x == x), as they are redundant and can be simplified.
+    avoid_equal_expressions: true
+
+    # Avoid explicitly naming fields in pattern matching expressions, as it can make the code less readable.
+    avoid_explicit_pattern_field_name: true
+
+    # Avoid calling 'toString()' on 'Future' instances, as it can lead to unexpected behavior and performance issues.
+    avoid_future_tostring: true
+
+    # Avoid shadowing generic type arguments with local variables, as it can lead to confusion and errors.
+    avoid_generics_shadowing: true
+
+    # Avoid inferring type arguments when they can be explicitly declared, as it improves code readability.
+    avoid_inferrable_type_arguments: true
+
+    # Avoid using keywords in wildcard patterns, as it can lead to unexpected behavior and confusion.
+    avoid_keywords_in_wildcard_pattern: true
+
+    # Avoid using 'contains' method on map keys, as it can lead to unexpected behavior and incorrect results.
+    avoid_map_keys_contains: true
+
+    # Avoid missing method calls, as it can lead to incomplete functionality and unexpected behavior.
+    avoid_missed_calls: true
+
+    # Avoid missing enum constants in map literals, as it can lead to runtime errors and incorrect behavior.
+    avoid_missing_enum_constant_in_map: true
+
+    # Avoid misusing test matchers, as it can lead to incorrect and unreliable test results.
+    avoid_misused_test_matchers: true
+
+    # Avoid nesting futures inside other futures, as it can lead to callback hell and make the code harder to read.
+    avoid_nested_futures: true
+
+    # Avoid nesting records (classes) inside other records, as it can lead to complex and less maintainable code.
+    avoid_nested_records: true
+
+    # Avoid interpolating nullable values in strings, as it can lead to unexpected behavior and null pointer exceptions.
+    avoid_nullable_interpolation: true
+
+    # Avoid using nullable parameters with default values, as it can lead to unexpected behavior and null pointer exceptions.
+    avoid_nullable_parameters_with_default_values: true
+
+        # Avoid passing async functions when sync functions are expected, as it can lead to unexpected behavior.
+    avoid_passing_async_when_sync_expected: true
+
+    # Avoid passing 'this' as an argument, as it can lead to confusion and unexpected behavior.
+    avoid_passing_self_as_argument: true
+
+    # Avoid using 'async' when it's not necessary, as it can lead to unnecessary overhead.
+    avoid_redundant_async: true
+
+    # Avoid using 'else' when it's not necessary, as it can lead to unnecessary complexity.
+    avoid_redundant_else: true
+
+    # Avoid using redundant positional field names, as it can lead to unnecessary verbosity.
+    avoid_redundant_positional_field_name: true
+
+    # Avoid using redundant 'pragma inline', as it can lead to unnecessary verbosity.
+    avoid_redundant_pragma_inline: true
+
+    # Avoid referencing variables that have been discarded, as it can lead to unexpected behavior.
+    avoid_referencing_discarded_variables: true
+
+    # Avoid self assignment, as it is redundant and can lead to confusion.
+    avoid_self_assignment: true
+
+    # Avoid self comparison, as it is redundant and can lead to confusion.
+    avoid_self_compare: true
+
+    # Avoid shadowing extension methods, as it can lead to unexpected behavior.
+    avoid_shadowed_extension_methods: true
+
+    # Avoid shadowing variables, as it can lead to confusion and unexpected behavior.
+    avoid_shadowing: true
+
+    # Avoid throwing exceptions in catch blocks, as it can lead to unexpected behavior.
+    avoid_throw_in_catch_block: true
+
+    # Avoid throwing objects without a 'toString' method, as it can lead to unhelpful error messages.
+    avoid_throw_objects_without_tostring: true
+
+    # Avoid unassigned late fields, as it can lead to null pointer exceptions.
+    avoid_unassigned_late_fields: true
+
+    # Avoid unassigned stream subscriptions, as it can lead to memory leaks.
+    avoid_unassigned_stream_subscriptions: true
+
+    # Avoid uncaught future errors, as it can lead to unexpected behavior.
+    avoid_uncaught_future_errors: true
+
+    # Avoid unconditional breaks, as it can lead to unexpected behavior.
+    avoid_unconditional_break: true
+
+    # Avoid unnecessary calls, as it can lead to unnecessary overhead.
+    avoid_unnecessary_call: true
+
+    # Avoid unnecessary conditionals, as it can lead to unnecessary complexity.
+    avoid_unnecessary_conditionals: true
+
+    # Avoid unnecessary futures, as it can lead to unnecessary overhead.
+    avoid_unnecessary_futures: true
+
+    # Avoid unnecessary 'if' statements, as it can lead to unnecessary complexity.
+    avoid_unnecessary_if: true
+
+    # Avoid unnecessary local 'late' variables, as it can lead to unnecessary complexity.
+    avoid_unnecessary_local_late: true
+
+    # Avoid unnecessary negations, as it can lead to confusion.
+    avoid_unnecessary_negations: true
+
+    # Avoid unnecessary nullable return types, as it can lead to unnecessary complexity.
+    avoid_unnecessary_nullable_return_type: true
+
+    # Avoid unnecessary reassignment, as it can lead to confusion.
+    avoid_unnecessary_reassignment: true
+
+    # Avoid unnecessary 'return' statements, as it can lead to unnecessary complexity.
+    avoid_unnecessary_return: true
+
+    # Avoid unnecessary 'super' calls, as it can lead to unnecessary overhead.
+    avoid_unnecessary_super: true
+
+    # Avoid unnecessary type assertions, as it can lead to unnecessary complexity.
+    avoid_unnecessary_type_assertions: true
+
+    # Avoid unnecessary type casts, as it can lead to unnecessary complexity.
+    avoid_unnecessary_type_casts: true
+
+    # Avoid unrelated type assertions, as it can lead to unexpected behavior.
+    avoid_unrelated_type_assertions: true
+
+    # Avoid unrelated type casts, as it can lead to unexpected behavior.
+    avoid_unrelated_type_casts: true
+
+    # Avoid unsafe collection methods, as it can lead to unexpected behavior.
+    avoid_unsafe_collection_methods: true
+
+    # Avoid unused generics, as it can lead to unnecessary complexity.
+    avoid_unused_generics: true
+
+    # Avoid unused instances, as it can lead to memory leaks.
+    avoid_unused_instances: true
+
+    # Avoid unused parameters, as it can lead to unnecessary complexity.
+    avoid_unused_parameters: true
+
+    # Avoid wildcard cases with enums, as it can lead to unexpected behavior.
+    avoid_wildcard_cases_with_enums: true
+
+    # Ensure that functions always return null, as it can lead to unexpected behavior.
+    function_always_returns_null: true
+
+    # Ensure that getter and setter field names match, as it can lead to confusion.
+    match_getter_setter_field_names: true
+
+    # Move variables closer to their usage, as it can improve code readability.
+    move_variable_closer_to_its_usage: true
+
+    # Avoid empty blocks, as they can lead to confusion.
+    no_empty_block: true
+
+    # Avoid equal conditions, as they can lead to confusion.
+    no_equal_conditions: true
+
+     # Avoid equal nested conditions, as they can lead to confusion and are often the result of a mistake.
+    no_equal_nested_conditions: true
+
+    # Avoid equal switch case statements, as they can lead to confusion.
+    no_equal_switch_case: true
+
+    # Avoid equal switch expression cases, as they can lead to confusion.
+    no_equal_switch_expression_cases: true
+    
+    # Avoid equal then-else blocks, as they can lead to confusion.
+    no_equal_then_else: true
+    
+    # Prefer using 'any' or 'every' instead of 'contains' for readability.
+    prefer_any_or_every: true
+    
+    # Prefer using the correct callback field name for better clarity.
+    prefer_correct_callback_field_name: true
+    
+    # Prefer using the correct increment in a for loop for better clarity.
+    prefer_correct_for_loop_increment: true
+    
+    # Prefer using correct JSON casts for better type safety.
+    prefer_correct_json_casts: true
+    
+    # Prefer using the correct file name for test files for better organization.
+    prefer_correct_test_file_name: true
+    
+    # Prefer declaring const constructors for better performance and memory usage.
+    prefer_declaring_const_constructor: true
+    
+    # Prefer using explicit function types for better clarity.
+    prefer_explicit_function_type: true
+    
+    # Prefer using 'Iterable<T>' instead of 'List<T>' for better flexibility.
+    prefer_iterable_of: true
+    
+    # Prefer using the correct file name for matchers in tests for better organization.
+    prefer_match_file_name: true
+    
+    # Prefer using the null-aware spread operator for better readability.
+    prefer_null_aware_spread: true
+    
+    # Prefer using parentheses with 'if-null' operators for better clarity.
+    prefer_parentheses_with_if_null: true
+    
+    # Prefer using prefixed global constants for better clarity.
+    prefer_prefixed_global_constants: true
+    
+    # Prefer using public exception classes for better reusability.
+    prefer_public_exception_classes: true
+    
+    # Prefer using 'return await' instead of 'await return' for better readability.
+    prefer_return_await: true
+    
+    # Prefer using simpler patterns for null checks for better readability.
+    prefer_simpler_patterns_null_check: true
+    
+    # Prefer placing specific cases first in switch statements for better organization.
+    prefer_specific_cases_first: true
+    
+    # Prefer using switch statements with enums for better type safety.
+    prefer_switch_with_enums: true
+    
+    # Prefer using trailing commas for better readability and easier code maintenance.
+    prefer_trailing_comma: true
+    
+    # Prefer using unique test names for better organization and clarity.
+    prefer_unique_test_names: true
+    
+    # Prefer using wildcard patterns for better readability.
+    prefer_wildcard_pattern: true
+    
+    # Avoid unnecessary trailing commas, as they can lead to confusion.
+    unnecessary_trailing_comma: true
+
+    flutter:
+          # Always remove listeners when they are no longer needed to prevent memory leaks.
+      always_remove_listener: true
+
+      # Avoid calling setState with an empty function, as it can lead to unnecessary rerenders.
+      avoid_empty_setstate: true
+
+      # Avoid incomplete copyWith methods, as they can lead to unexpected behavior.
+      avoid_incomplete_copy_with: true
+
+      # Avoid missing alt attribute in Image widgets for accessibility reasons.
+      avoid_missing_image_alt: true
+
+      # Avoid recursive calls in widgets, as they can lead to stack overflow errors.
+      avoid_recursive_widget_calls: true
+
+      # Avoid using constructors in State classes, use initState instead.
+      avoid_state_constructors: true
+
+      # Avoid instances that are not disposed, as they can lead to memory leaks.
+      avoid_undisposed_instances: true
+
+      # Avoid unnecessary overrides in State classes, as they can lead to confusion.
+      avoid_unnecessary_overrides_in_state: true
+
+      # Avoid calling setState when it's not necessary, as it can lead to unnecessary rerenders.
+      avoid_unnecessary_setstate: true
+
+      # Avoid unnecessary StatefulWidgets when a StatelessWidget could be used instead.
+      avoid_unnecessary_stateful_widgets: true
+
+      # Check for equality in RenderObject setters to prevent unnecessary updates.
+      check_for_equals_in_render_object_setters: true
+
+      # Ensure that RenderObject updates are consistent to prevent unexpected behavior.
+      consistent_update_render_object: true
+
+      # Dispose fields in the dispose method to prevent memory leaks.
+      dispose_fields: true
+
+      # Prefer dedicated MediaQuery methods for better readability.
+      prefer_dedicated_media_query_methods: true
+
+      # Prefer single widget per file for better organization.
+      prefer_single_widget_per_file: true
+
+      # Ensure super calls are properly placed in overridden methods.
+      proper_super_calls: true
+
+      # Use setState synchronously to prevent unexpected behavior.
+      use_setstate_synchronously: true
