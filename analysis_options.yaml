@@ -1,5 +1,7 @@
 include: package:flutter_lints/flutter.yaml
 linter:
+  plugins:
+    - custom_lint
   metrics:
     cyclomatic-complexity: 20
     maximum-nesting-level: 5
