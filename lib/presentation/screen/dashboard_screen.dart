@@ -1,3 +1,5 @@
+import 'package:boiler_plate/infrastructure/network/api_service.dart';
+import 'package:boiler_plate/infrastructure/network/network_response.dart';
 import 'package:flutter/material.dart';
 
 class DashboardScreen extends StatefulWidget {
@@ -46,9 +48,20 @@ class _DashboardScreenState extends State<DashboardScreen> {
             ListTile(
               leading: Icon(Icons.message),
               title: Text('Messages'),
-              onTap: () {
-                // Handle the tap
-              },
+              onTap: ()  {
+                // NetworkResponse? data = await Api()
+                //     .apiCall('/api/character', null, null, RequestType.GET);
+                // data?.when(success: (data){
+                //   print('success');
+                //   print(data);
+                // }, error: (message){
+                //   print('error');
+                //   print(message);
+                // }, loading: (message){
+                //   print('loading');
+                //   print(message);
+                // });
+              }
             ),
             ListTile(
               leading: Icon(Icons.account_circle),

@@ -1,4 +1,10 @@
 include: package:flutter_lints/flutter.yaml
+analyzer:
+  strong-mode: true
+  exclude:
+    - '**/*.g.dart'
+    - '**/*.freezed.dart'
+    - '**/*.gr.dart'
 linter:
   plugins:
     - custom_lint
