@@ -48,19 +48,21 @@ class _DashboardScreenState extends State<DashboardScreen> {
             ListTile(
               leading: Icon(Icons.message),
               title: Text('Messages'),
-              onTap: ()  {
-                // NetworkResponse? data = await Api()
-                //     .apiCall('/api/character', null, null, RequestType.GET);
-                // data?.when(success: (data){
-                //   print('success');
-                //   print(data);
-                // }, error: (message){
-                //   print('error');
-                //   print(message);
-                // }, loading: (message){
-                //   print('loading');
-                //   print(message);
-                // });
+              onTap: () async* {
+                
+                NetworkResponse? data
+               = await Api()
+                    .apiCall('/api/character', null, null, RequestType.GET);
+                    data?.when(success: (data){
+                      print('success');
+                      print(data);
+                    }, error: (message){
+                      print('error');
+                      print(message);
+                    }, loading: (message){
+                      print('loading');
+                      print(message);
+                    });
               }
             ),
             ListTile(
